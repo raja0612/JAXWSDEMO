@@ -18,6 +18,8 @@ public class HelloWorldClient {
 	
 	URL url = new URL("http://localhost:9999/ws/hello?wsdl");
 	
+	//first parameter is service URI
+	//second parameter is service name. Refer to WSDL for these parameters
 	QName qname = new QName("http://ws.soap.com/", "HelloWorldImplService");
 	
 	Service service = Service.create(url,qname);
